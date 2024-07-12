@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    line-height: 1.6;
+}
+.header-bar{
+    background-color: #0D47A1;
+    color: white;
+    width: 100%;
+    position: fixed;
+}
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2.5rem;
+    height: 70px;
+}
+#navbar > a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+#navbar ul{
+    list-style: none;
+    display: flex;
+}
+
+#navbar ul li a{
+    padding: 0 1rem;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+#navbar ul li a:hover{
+    color: #003366;
+}
+.cv-button{
+    background-color: white;
+    color: black !important;
+    font-size: 16px !important;
+    padding: 5px;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 4px;
+}
+.cv-button:hover{
+    color: #0D47A1 !important;
+}
+.profile{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+.profile-bar{
+    display: grid;
+    place-items: center;
+    padding: 40px;
+    text-align: center;}
+.profile-bar a {
+    text-decoration: none;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    color: #0D47A1;
+    font-size: 18px
+}
+.social-links a span{
+    background-color: #0D47A1;
+    color: white;
+    padding: 5px;
+    border-radius: 4px;
+}
+.social-links a span:hover{
+    background-color: #003366 !important;
+}
+.social-links a:hover{
+    color: #003366 !important;
+}
+.section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#home{
+    display: flex;
+}
+#about{
+    background-color: #f0f0f0;
+}
+#project{
+    display: flex;
+}
+#contact{
+    display: flex;
+}
+.footer-bar{
+    background-color: #263238;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    width: 100%;
+
+}
+.footer-bar a{
+    text-decoration: none;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+.footer-bar a:hover{
+    color: #0D47A1;
+}
+.form{
+    width: 600px;
+    margin: 0 auto;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgb(0,0,0,0.1);
+}
+.form-group{
+    margin-bottom: 20px;
+}
+label{
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #0D47A1;
+}
+input{
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+textarea{
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: none;
+}
+.btn{
+    background-color: #0D47A1;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+.btn:hover{
+    background-color: #003366;
+}
+.brt{
+    color: #0D47A1;
+}
+#project {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Bu, her bir proje arasındaki boşluğu belirler */
+}
+
+.project-link {
+    flex: 1 1 calc(33.333% - 40px); /* 3 sütun için genişlik hesaplaması ve aralarındaki boşluğu dengeleme */
+    max-width: calc(33.333% - 40px);
+    text-decoration: none; /* Alt çizgiyi kaldırmak için */
+}
+
+.project-sctn {
+    padding: 20px;
+    height: 300px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    box-shadow: 1 1px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: background-color 0.3s; /* Hover efekti için geçiş */
+    color: #0D47A1;
+}
+
+.project-sctn:hover {
+    background-color: #e0e0e0; /* Hover rengi */
+    color: #003366;
+}
